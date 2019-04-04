@@ -1,0 +1,88 @@
+authorID,name,gender,life,image,history
+3089,David Hume,Hombre,Edimburgo (1711-1776),hume.jpg,Filosofía moderna
+3090,John Locke,Hombre,Wrington (1632)-Oates (1704),John-Locke.jpg,Filosofía moderna
+3091,Rudolph Carnap,Hombre,Rondsdorf (1891)-Santa Mónica (1970),rudolph-carnap.jpeg,Filosofía contemporánea
+3092,Bertrand Russell,Hombre,Ravenscroft (1872)-Penrhyndeudraeth (1970),russell.jpg,Filosofía contemporánea
+3093,Platón,Hombre,Atenas (427 a.C.-347 a.C.),platon.jpg,Filosofía antigua
+3094,G.W.F. Hegel,Hombre,Stuttgart (1770)-Berlin (1831),Hegel.jpg,Filosofía moderna
+3095,San Agustín,Hombre,Tagaste (354)-Hipona (430),sanagustin.jpg,Filosofía medieval
+3096,Santo Tomás,Hombre,Rocaseca (1225)-Fossanova (1275),Saint_Thomas_Aquinas.jpg,Filosofía medieval
+3097,Aristóteles,Hombre,Estagira (384 a.C)-Calcis (322 a.C.),Aristoteles-1000px.jpg,Filosofía antigua
+3098,Michel de Montaigne,Hombre,Montaigne (1533-1592),montaigne.jpg,Filosofía moderna
+3099,Pirrón,Hombre,Élide (365/360 a.C.-275/270 a.C.),pirron-221x300.jpg,Filosofía antigua
+3100,Sexto Empírico,Hombre,Apolonia (siglos II-III),sexto-empirico.jpeg,Filosofía antigua
+3101,Friedrich Nietzsche,Hombre,Röcken (1844)-Weimar (1900),Nietzsche.jpg,Filosofía contemporánea
+3102,René Descartes,Hombre,La Haye en Touraine (1596)-Estocolmo (1650),Descartes.jpg,Filosofía moderna
+3103,Gottfried Leibniz,Hombre,Leipzig (1646)-Hannover (1716),leibniz.jpeg,Filosofía moderna
+3104,William James,Hombre,Nueva York (1842)-New Hampshire (1910),william-james.jpeg,Filosofía moderna
+3105,Stuart Mill,Hombre,Pentoville (1806)-Avignon (1873),stuart-mill.jpeg,Filosofía moderna
+3106,José Ortega y Gasset,Hombre,Madrid (1883-1956),ortega-y-gasset.jpg,Filosofía contemporánea
+3107,María Zambrano,Mujer,Vélez (1904)–Madrid (1991),maria-zambrano.jpeg,Filosofía contemporánea
+3108,Jean Paul Sartre,Hombre,París (1905-1980),sartre.jpeg,Filosofía contemporánea
+3109,Gabriel Marcel,Hombre,París (1889-1973),marcel.jpeg,Filosofía contemporánea
+3110,H. G. Gadamer,Hombre,Marburgo (1900)-Heidelberg (2002),gadamer.jpg,Filosofía contemporánea
+3111,David Gauthier,Hombre,Toronto (1932),images.duckduckgo.com__0.jpeg,Actualidad
+3112,G. E. Moore,Hombre,Londres (1873)-Cambridge (1958),ge-moore.jpeg,Filosofía contemporánea
+3113,Epicuro,Hombre,Gargeta (341 a.C.)-Ática (270 a.C.),epicuro.jpg,Filosofía antigua
+3114,Marco Aurelio,Hombre,Roma (121)-Viena (180),marco-aurelio.jpg,Filosofía antigua
+3115,Séneca,Hombre,Córdoba (4 a.C.)-Roma (65),seneca-2.jpg,Filosofía antigua
+3116,Cicerón,Hombre,Arpino (106 a.C.)-Formia (43 a.C.),images.duckduckgo.com_.jpeg,Filosofía antigua
+3117,Noam Chomsky,Hombre,Filadelfia (1928),chomsky.jpeg,Actualidad
+3118,Eduardo Galeano,Hombre,Montevideo (1940),images.duckduckgo.com__1.jpeg,Filosofía contemporánea
+3119,Brian Norton,Hombre,,descarga_5.jpg,Actualidad
+3120,Peter Singer,Hombre,Melbourne (1946),Peter%20Singer.JPG,Actualidad
+3121,Aldo Leopold,Hombre,Burlington (1887-1948)-,descarga.jpg,Filosofía contemporánea
+3122,Jesús Mosterín,Hombre,Bilbao (1941),jesus-mosterin.jpeg,Actualidad
+3123,Karl Popper,Hombre,Viena (1902)-Londres (1994),karl-popper.jpeg,Filosofía contemporánea
+3124,Robert Nozick,Hombre,Nueva York (1938-2002),robert-nozick.jpeg,Actualidad
+3125,Arthur Schopenhauer,Hombre,Danzig (1788)-Frankfurt (1860),schopenhauer.jpg,Filosofía moderna
+3126,Cioran,Hombre,Resinár (1911)-París (1995),cioran.jpg,Filosofía contemporánea
+3127,S. P. Huntington,Hombre,"Nueva York (1927) - Martha's Vineyrad, EEUU, 2008",samuel-huntington.jpeg,Actualidad
+3128,Jürgen Habermas,Hombre,Dusseldorf (1929),JuergenHabermas.jpg,Actualidad
+3129,Pierre Bourdieu,Hombre,Denguin (1930)-París (2002),bourdieu.jpeg,Actualidad
+3130,Gustavo Bueno,Hombre,Santo Domingo de la Calzada (1924) - Niembro (2016),gustavo-bueno.jpeg,Actualidad
+3131,François Marie Arouet (Voltaire),Hombre,París (1694-1778),voltaire.jpg,Filosofía moderna
+3132,Ludwig Wittgentein,Hombre,Viena (1889)-Cambridge (1951),Wittgenstein.jpg,Filosofía contemporánea
+3133,Miguel de Unamuno,Hombre,Bilbao (1864)-Salamanca (1936),unamuno.jpg,Filosofía contemporánea
+3134,Immanuel Kant,Hombre,Königsberg (1724-1804),kant.jpg,Filosofía moderna
+3135,Karl Marx,Hombre,"Tréveris, 1818-Londres, 1883",marx.jpg,Filosofía moderna
+3136,Jean Jacques Rousseau,Hombre,Ginebra (28 de junio de 1712) - Ermenonville (2 de julio de 1778),rousseau.jpg,Filosofía moderna
+3137,Guillermo de Ockham,Hombre,Ockham (1280-1288 aprox) - Munich (9 de abril de 1349),ockham.jpg,Filosofía medieval
+3261,Simone Weil,Mujer,París (3 de febrero de 1909) - Ashford (24 de agosto de 1943),simone-weil.jpeg,Filosofía contemporánea
+3262,Edith Stein,Mujer,Breslavia (12 de octubre de 1891) - Auschwitz (9 de agosto de 1942),descarga_4.jpg,Filosofía contemporánea
+3263,Simone de Beauvoir,Mujer,París (9 de enero de 1908 - 14 de abril de 1986),simone-beauvoir.jpg,Filosofía contemporánea
+3264,Ayn Rand,Mujer,San Petersburgo (2 de febrero de 1905) - Nueva York (6 de marzo de 1982),descarga_2.jpg,Filosofía contemporánea
+3265,Mary Wollstonecraft,Mujer,Londres (27 de abril de 1759 - 10 de septiembre de 1797),mary-wollstonecraft.jpg,Filosofía moderna
+3266,Hannah Arendt,Mujer,Hannover (14 de octubre de 1906) - Nueva York (4 de diciembre de 1975),Arendt.jpg,Filosofía contemporánea
+3267,Germaine de Staël,Mujer,París (22 de abril de 1766 - 14 de julio de 1817),germaine-de-stael.jpeg,Filosofía moderna
+3268,Olympe de Gouges,Mujer,Moutaban (7 de mayo de 1748) - París (3 de noviembre de 1793),olympe-de-gouges.jpeg,Filosofía moderna
+3269,Christine de Pizan,Mujer,,descarga_3.jpg,Filosofía medieval
+3270,Émilie du Châtelet,Mujer,París (17 de diciembre de 1706) - Luneville (10 de septiembre de 1749),EMILIE-DU-CHATELET.jpeg,Filosofía moderna
+3271,Hildegard von Bingen,Mujer,Bermersheim vor der Höhe (16 de septiembre de 1098) - Rupertsberg (17 de septiembre de 1179),von-bingen.jpeg,Filosofía medieval
+3272,Lou Andreas-Salomé,Mujer,San Petersburgo (12 de febrerode 1861) - Gotinga (5 de febrero de 1937),lou-andreas-salome.jpeg,Filosofía contemporánea
+3273,Julia Kristeva,Mujer,Sliven (24 de junio de 1941),kristeva.jpeg,Actualidad
+3274,Martha Nussbaum,Mujer,Nueva York (6 de mayo de 1947) -,nussbaum.jpg,Actualidad
+3275,Amelia Valcárcel,Mujer,Madrid (16 de noviembre de 1950),descarga_0.jpg,Actualidad
+3276,Judith Butler,Mujer,Cleveland (24 defebrero de 1956) -,judith_butler_ap_img.jpg,Actualidad
+3285,Averroes,Hombre,"Córdoba, Al-Andalus, (14-04-1126) - Marrakech (10-12-1198)",averroes.jpg,Filosofía medieval
+3286,Augusto Comte,Hombre,Montpellier (19 de enero de 1798) - París (5 de septiembre de 1857),Comte.jpg,Filosofía moderna
+3287,Confucio,Hombre,Zou (28 de septiembre de 551 a. C.) - Lu (,confucio.jpg,Filosofía antigua
+3288,Thomas Hobbes,Hombre,Westport (5 de abril de 1588) - Derbyshire (4 de diciembre de 1679,hobbes.jpg,Filosofía moderna
+3289,Heráclito,Hombre,Éfeso (535 a. C. - 484 a.C.),heraclito.jpg,Filosofía antigua
+3290,Enrique Dussel,Hombre,"Departamento de La Paz, Argentina (24 de diciembre de 1934) -",dussel.jpg,Actualidad
+3291,Michel Foucault,Hombre,Poitiers (15 de octubre de 1926) - París (25 de junio de 1984),foucault.jpg,Filosofía contemporánea
+3292,Soren Kierkegaard,Hombre,Copenague (5 de mayo de 1813 - 11 de noviembre de 1855),kierkegaard.jpg,Filosofía moderna
+3293,Lao Tse,Hombre,,Lao-tse.jpg,Filosofía antigua
+3294,Emmanuel Levinas,Hombre,,levinas.jpg,Filosofía contemporánea
+3295,Nicolás Maquiavelo,Hombre,,maquiavelo.jpg,Filosofía moderna
+3296,Sigmund Freud,Hombre,,sigmund-freud.jpg,Filosofía contemporánea
+3297,Sócrates,Hombre,,socrates.jpg,Filosofía antigua
+3298,Baruch Spinoza,Hombre,,spinoza.jpg,Filosofía moderna
+3299,Hipatia de Alejandría,Mujer,,hipatia.jpeg,Filosofía antigua
+3300,Sun Tzu,Hombre,,sun-tzu.jpeg,Filosofía antigua
+3301,Theodor W. Adorno,Hombre,,theodor-adorno.jpeg,Filosofía contemporánea
+3302,Max Horkheimer,Hombre,,horkheimer.jpeg,Filosofía contemporánea
+3303,Gilles Deleuze,Hombre,,deleuze.jpeg,Filosofía contemporánea
+3304,Jacques Derrida,Hombre,,jacques-derrida.jpeg,Filosofía contemporánea
+3699,Martin Heidegger,Hombre,"Messkirch, Baden-Wurtemberg (26 de septiembre de 1889) - Friburgo de Brisgovia (26 de mayo de 1976)",heidegger.jpg,Filosofía contemporánea
+3700,Edmund Husserl,,Prossnitz (8 de abril de 1859) - Friburgo (27 de abril de 1938),husserl.jpg,Filosofía contemporánea
