@@ -4,6 +4,12 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Artisan;
+use App\Author;
+use App\Book;
+use App\Idea;
+use App\Current;
+use App\Quote;
 
 
 class ImportCommand extends Command
@@ -40,13 +46,13 @@ class ImportCommand extends Command
     public function handle()
     {
 
-        //if ($this->confirm('Run this command remove all previous data. Do you wish to continue?')) {
-
-        $files = $this->files();
-        foreach ($files as $filename => $model) {
-            $this->import($this->read($filename), $model);
+        if ($this->confirm('Run this command remove all previous data. Do you wish to continue?')) {
+            Artisan::call('migrate:refresh');
+            $files = $this->files();
+            foreach ($files as $filename => $model) {
+                $this->import($this->read($filename), $model);
+            }
         }
-        //}
 
         $this->info('Import completed!');
     }
@@ -54,9 +60,29 @@ class ImportCommand extends Command
     public function import($file_data, $model)
     {
         extract($file_data);
-        var_dump($keys);
-        var_dump($data);
-        var_dump($model);
+        foreach ($data as $row) {
+            $seed = [];
+            if ($this->validate($keys, $row)) {
+                $seed = array_combine($keys, $row);
+                $this->name($model)::create($seed);
+            }
+        }
+    }
+
+    private function validate($keys, $row)
+    {
+        if (empty($row)) {
+            return false;
+        }
+        if (count($keys) != count($row)) {
+            return false;
+        }
+        return true;
+    }
+
+    private function name($model)
+    {
+        return "App\\" . $model;
     }
 
     public function read($filename)
