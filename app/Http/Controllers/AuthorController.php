@@ -14,7 +14,7 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        //
+        return Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->get();
     }
 
     /**
