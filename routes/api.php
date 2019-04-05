@@ -17,4 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('authors', 'AuthorController');
+Route::apiResource('v1/authors', 'AuthorController', ['only' => ['index']]);
+// Route::group(['middleware' => 'auth:api'], function () {
+//     Route::apiResource('authors', 'AuthorController', ['only' => ['index']]);
+// });
