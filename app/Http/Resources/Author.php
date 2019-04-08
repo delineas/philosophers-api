@@ -21,6 +21,33 @@ class Author extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        $resource = parent::toArray($request);
+
+        return [
+            'type'          => 'author',
+            'id'            => (string)$this->id,
+            'attributes'    => [
+                $resource
+            ],
+            //'relationships' => new ArticlesRelationshipResource($this),
+            'links'         => [
+                'self' => route('author.show', ['author' => $this->id]),
+            ],
+        ];
+    }
+    /**
+     * Get additional data that should be returned with the resource array.
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return array
+     */
+    public function with($request): array
+    {
+        return [
+            'links' => [
+                'self' => route('author.index'),
+            ],
+        ];
     }
 }

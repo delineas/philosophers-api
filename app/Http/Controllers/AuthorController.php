@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Author;
 use Illuminate\Http\Request;
+use App\Http\Resources\AuthorCollection;
+use App\Http\Resources\Author as AuthorResource;
 
 class AuthorController extends Controller
 {
@@ -14,7 +16,8 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        return Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->get();
+        return new AuthorCollection(Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->paginate(20));
+        //return Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->get();
     }
 
     /**
@@ -46,7 +49,7 @@ class AuthorController extends Controller
      */
     public function show(Author $author)
     {
-        //
+        return new AuthorResource($author);
     }
 
     /**
