@@ -28,10 +28,26 @@ class Author extends JsonResource
             'id'            => (string)$this->id,
             'attributes'    => $resource,
             'relationships' => [
-                'quotes'    => $this->quotes()->get(),
-                'books'     => $this->books()->get(),
-                'ideas'     => $this->ideas()->get(),
-                'currents'  => $this->currents()->get()
+                'quotes'    => $this->quotes()->get()->map(
+                    function ($quote) {
+                        return $quote->quote;
+                    }
+                ),
+                'books'     => $this->books()->get()->map(
+                    function ($book) {
+                        return $book->book;
+                    }
+                ),
+                'ideas'     => $this->ideas()->get()->map(
+                    function ($idea) {
+                        return $idea->idea;
+                    }
+                ),
+                'currents'  => $this->currents()->get()->map(
+                    function ($current) {
+                        return $current->current;
+                    }
+                )
             ],
             'links'         => [
                 'self' => route('author.show', ['author' => $this->id]),
