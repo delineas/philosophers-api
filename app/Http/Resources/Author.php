@@ -26,10 +26,13 @@ class Author extends JsonResource
         return [
             'type'          => 'author',
             'id'            => (string)$this->id,
-            'attributes'    => [
-                $resource
+            'attributes'    => $resource,
+            'relationships' => [
+                'quotes'    => $this->quotes()->get(),
+                'books'     => $this->books()->get(),
+                'ideas'     => $this->ideas()->get(),
+                'currents'  => $this->currents()->get()
             ],
-            //'relationships' => new ArticlesRelationshipResource($this),
             'links'         => [
                 'self' => route('author.show', ['author' => $this->id]),
             ],

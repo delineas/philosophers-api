@@ -16,8 +16,7 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        return new AuthorCollection(Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->paginate(20));
-        //return Author::orderBy('name')->with(['quotes', 'books', 'ideas', 'currents'])->get();
+        return new AuthorCollection(Author::orderBy('name')->paginate(20));
     }
 
     /**
