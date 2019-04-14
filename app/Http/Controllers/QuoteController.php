@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Quote;
 use Illuminate\Http\Request;
+use App\Http\Resources\Quote as QuoteResource;
+use App\Http\Resources\QuoteCollection;
 
 class QuoteController extends Controller
 {
@@ -14,7 +16,18 @@ class QuoteController extends Controller
      */
     public function index()
     {
-        //
+        return new QuoteCollection(Quote::orderBy('votes')->paginate(20));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function random()
+    {
+        $quote = Quote::inRandomOrder()->get()->first();
+        return new QuoteResource($quote);
     }
 
     /**
@@ -46,7 +59,7 @@ class QuoteController extends Controller
      */
     public function show(Quote $quote)
     {
-        //
+        return new QuoteResource($quote);
     }
 
     /**
