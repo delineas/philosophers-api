@@ -1,9 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Resources\Author as AuthorResource;
-use App\Author;
-use App\Http\Resources\AuthorCollection;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,14 +22,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     Route::apiResource('authors', 'AuthorController', ['only' => ['index']]);
 // });
 
-// Route::get('/v1/authors/{id}', function ($id) {
-//     return new AuthorResource(Author::find($id));
-// });
+Route::group(['prefix' => 'v1'], function () {
+    Route::get('/authors/{author}', 'AuthorController@show')->name('author.show');
+    Route::get('/authors', 'AuthorController@index')->name('author.index');
+    Route::get('/quotes', 'QuoteController@index')->name('quote.index');
+    Route::get('/quotes/random', 'QuoteController@random')->name('quote.random');
+    Route::get('/quotes/{quote}', 'QuoteController@show')->name('quote.show');
+});
 
-// Route::get('/v1/authors', function () {
-//     return new AuthorCollection(Author::paginate());
-// });
-
-Route::get('/v1/authors/{author}', 'AuthorController@show')->name('author.show');
-
-Route::get('/v1/authors', 'AuthorController@index')->name('author.index');
