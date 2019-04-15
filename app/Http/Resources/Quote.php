@@ -22,6 +22,13 @@ class Quote extends JsonResource
             'id'            => (string)$this->id,
             'attributes'    => $resource,
             'relationships' => [
+                'vote'     => [
+                    'type' => 'vote',
+                    'meta' => [
+                        'up'    => $this->votesSumByType('up'),
+                        'down'  => $this->votesSumByType('down'),
+                    ]
+                ],
                 'author'    => new AuthorResource($this->author()->first()),
             ],
             'links'         => [
