@@ -25,9 +25,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1'], function () {
     Route::get('/authors/{author}', 'AuthorController@show')->name('author.show');
     Route::get('/authors', 'AuthorController@index')->name('author.index');
+
     Route::get('/quotes', 'QuoteController@index')->name('quote.index');
     Route::get('/quotes/random', 'QuoteController@random')->name('quote.random');
     Route::get('/quotes/{quote}', 'QuoteController@show')->name('quote.show');
-    Route::post('/vote', 'VoteController@store')->name('vote.store');
+    
+    Route::post('/votes', 'VoteController@store')->name('vote.store');
+    Route::put('/votes/relationship/quote/{voteable}', 'VoteController@update')->name('vote.update');
 });
 

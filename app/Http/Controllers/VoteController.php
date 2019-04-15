@@ -26,4 +26,18 @@ class VoteController extends Controller
         $vote->save();
         return $vote;
     }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  $voteable_id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $voteable_id)
+    {
+        $vote = Vote::where('voteable_id', $voteable_id)->first();
+        $vote->update($request->all());
+        return $vote;
+    }
 }
