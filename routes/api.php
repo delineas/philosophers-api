@@ -28,5 +28,6 @@ Route::group(['prefix' => 'v1'], function () {
     Route::get('/quotes', 'QuoteController@index')->name('quote.index');
     Route::get('/quotes/random', 'QuoteController@random')->name('quote.random');
     Route::get('/quotes/{quote}', 'QuoteController@show')->name('quote.show');
+    Route::post('/vote', 'VoteController@store')->name('vote.store');
 });
 
